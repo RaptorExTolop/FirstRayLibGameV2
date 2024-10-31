@@ -1,6 +1,8 @@
 package main
 
-import rl "github.com/gen2brain/raylib-go/raylib"
+import (
+	rl "github.com/gen2brain/raylib-go/raylib"
+)
 
 func draw() {
 	rl.BeginDrawing()
@@ -8,6 +10,7 @@ func draw() {
 	rl.ClearBackground(bkgcolour)
 
 	rl.DrawTexturePro(playerSprite, playerSrc, playerDest, rl.NewVector2(0, 0), 0, rl.RayWhite)
+	rl.DrawFPS(0, 0)
 
 	rl.EndDrawing()
 }

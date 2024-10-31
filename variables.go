@@ -14,6 +14,8 @@ var (
 	playerSprite          rl.Texture2D
 	playerSrc, playerDest rl.Rectangle
 	playerDir                     = 0
-	playerSpeed                   = 7
+	playerSpeed                   = 300
 	playerRunning         float32 = 1
+	dt                    float32
+	totalFrames           = 0
 )
